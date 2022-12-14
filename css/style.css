@@ -247,25 +247,33 @@ body {
 
 .main__quality--items {
   margin-top: 10px;
+  word-spacing: 2px;
 }
 
 .first {
   grid-area: first;
+  text-align: center;
 }
 
 .second {
   grid-area: second;
+  text-align: center;
 }
 
 .third {
   grid-area: third;
+  text-align: center;
 }
 
-.main__quality--items h3 {
-  font-size: 1.2em;
-  color: #727477;
+.main__quality--items span {
+  font-size: 1em;
+  font-weight: bold;
   text-transform: uppercase;
-  text-align: center;
+  color: #4c79ad;
+}
+
+.main__quality--items p {
+  color: #727477;
 }
 
 .main__about {
@@ -310,6 +318,37 @@ body {
   font-size: 1em;
   color: #727477;
   text-align: center;
+}
+
+.footer {
+  background-color: #4c79ad;
+
+  padding: 15px 0;
+
+  text-align: center;
+}
+
+.footer-nav {
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-nav h4 {
+  color: #fafafa;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.footer-nav li {
+  margin: 5px 0;
+
+  font-size: 0.9em;
+}
+
+.footer-nav li a {
+  color: #fafafa;
+  text-decoration: none;
 }
 
 /* Tablet */
