@@ -285,7 +285,7 @@ body {
 .main__about--items {
   margin: 15px auto;
   width: 80%;
-  height: 250px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -392,7 +392,7 @@ hr {
   filter: invert(100%);
 }
 
-.footer p{
+.footer p {
   color: #f3f3f3;
   margin-top: 10px;
 }
