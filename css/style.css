@@ -351,6 +351,32 @@ body {
   text-decoration: none;
 }
 
+.footer-nav li a:hover {
+  color: #696969;
+}
+
+.footer-contact h4 {
+  color: #f3f3f3;
+}
+
+.footer-contact a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+.footer-contact p {
+  color: #f3f3f3;
+
+  text-align: center;
+}
+
+.footer__row--icon {
+  vertical-align: sub;
+  margin-right: 2px;
+
+  font-size: 22px !important;
+}
+
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .skewed {
