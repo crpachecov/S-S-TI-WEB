@@ -40,11 +40,14 @@ function changePosition() {
 
 }
 
-window.matchMedia("(max-width: 768px").addEventListener('resize', (e) => {
-    if (e.matches) {
-        interval = setInterval(changePosition, 6000);
-    } else {
-        clearInterval(interval);
-    }
+$(document).ready(function () {
+    $(window).resize(function () {
+        window.matchMedia("(max-width: 768px").addEventListener('change', (e) => {
+            if (e.matches) {
+                interval = setInterval(changePosition, 6000);
+            } else {
+                clearInterval(interval);
+            }
+        });
+    });
 });
-
