@@ -1,6 +1,10 @@
 const hamburguerIcon = document.querySelector('.nav__hamburguer');
 const navOverlay = document.querySelector('.nav__overlay');
 const navLink = document.querySelector('.nav__menu-list');
+// Slider
+const slider = [...document.querySelectorAll('.carousel__services-card')]; // Array
+let value = 0;
+let interval;
 
 hamburguerIcon.addEventListener('click', () => {
     hamburguerIcon.classList.toggle('nav__hamburguer--open');
@@ -19,3 +23,28 @@ navLink.addEventListener('click', () => {
 
     navOverlay.classList.toggle('nav__overlay--show');
 });
+
+function changePosition() {
+
+
+    if (value < slider.length) {
+        slider[value].classList.toggle('carousel__services-card--show');
+        value++;
+    }
+
+    if (value == slider.length) {
+        value = 0;
+    }
+
+    slider[value].classList.toggle('carousel__services-card--show');
+
+}
+
+window.matchMedia("(max-width: 768px").addEventListener('change', (e) => {
+    if (e.matches) {
+        interval = setInterval(changePosition, 6000);
+    } else {
+        clearInterval(interval);
+    }
+});
+

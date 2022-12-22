@@ -61,27 +61,76 @@
           <p class="main__paragraph">
             Soluciones simples a problemas complejos, confía en nosotros.
           </p>
-          <a href="#" class="main__cta"><span class="material-icons main__cta--icon">phone</span>Llámanos</a>
+          <a href="#" class="main__cta"><span class="material-icons main__cta-icon">phone</span>Llámanos</a>
         </div>
       </article>
 
     </section>
 
-    <section class="main__quality--grid">
+    <!-- Slider main container -->
+    <div class="carousel__services">
+      <h2 class="carousel__title">TE OFRECEMOS...</h2>
+      <!-- Slides -->
+      <div class="carousel__services-card carousel__services-card--show" data-id="1">
+        <div class="card-img">
+          <img src="/img/camara-seguridad.png" alt="Sistemas de Seguridad">
+        </div>
+        <div class="card-info">
+          <h3>Sistemas de Seguridad</h3>
+          <p>Te ayudamos a elegir el mejor equipo para sus necesidades como cámaras de vigilancia, sistemas de alarma y
+            cerraduras de seguridad mejoradas.</p>
+        </div>
+      </div>
+
+      <div class="carousel__services-card" data-id="2">
+        <div class="card-img">
+          <img src="/img/soporte-tecnico.png" alt="Soporte Técnico de equipo y sistemas">
+        </div>
+        <div class="card-info">
+          <h3>Soporte técnico</h3>
+          <p>Proporcionamos asistencia técnica y solución de sus problemas con sus sistemas y equipos.</p>
+        </div>
+      </div>
+
+      <div class="carousel__services-card" data-id="3">
+        <div class="card-img">
+          <img src="/img/cableadoEstrucuradoAnimado.png" alt="Cableado estructurado, redes,telecomunicaciones">
+        </div>
+        <div class="card-info">
+          <h3>Diseño de redes</h3>
+          <p>Implementación y configuración de gabinetes, cableado estructurado de redes y optimización a la red.</p>
+        </div>
+      </div>
+
+      <div class="carousel__services-card" data-id="4">
+        <div class="card-img">
+          <img src="/img/consultoria.png" alt="Consultoría TI">
+        </div>
+        <div class="card-info">
+          <h3>Consultoría TI</h3>
+          <p>Identificamos sus necesidades de tecnología y desarrollamos una estrategia a medida para su empresa.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <section class="main__quality-grid">
+
       <h2> NUESTRAS CUALIDADES</h2>
 
-      <article class="main__quality--items first">
+      <article class="main__quality-items first">
         <p>🔷<span>Cualificados y Capacitados </span>para proporcionar soluciones a los problemas de TI.
         </p>
       </article>
 
-      <article class="main__quality--items second">
+      <article class="main__quality-items second">
         <p>🔷<span>Flexibilidad </span>para proporcionar soluciones personalizadas que se ajusten a sus necesidades.
         </p>
       </article>
 
-      <article class="main__quality--items third">
-        <p>🔷<span>compromiso </span>con la resolución rápida y eficiente de cualquier problema o duda que puedan tener.
+      <article class="main__quality-items third">
+        <p>🔷<span>compromiso </span>con la resolución rápida y eficiente de cualquier problema o duda que puedan
+          tener.
         </p>
       </article>
 
@@ -89,14 +138,14 @@
 
     <section class="main__about" id="about">
 
-      <article class="main__about--items">
+      <article class="main__about-items">
         <h2>¿Quiénes somos?</h2>
         <p>
           Somos una empresa dedicada a la solución de problemas de TI.
         </p>
       </article>
 
-      <article class="main__about--items">
+      <article class="main__about-items">
         <h2>¿Qué hacemos?</h2>
         <p>
           Ofrecemos servicios de consultoría, mantenimiento y soporte técnico, así como soluciones de software a la
@@ -104,7 +153,7 @@
         </p>
       </article>
 
-      <article class="main__about--items">
+      <article class="main__about-items">
         <h2>¿Por qué elegirnos?</h2>
         <p>
           Porque somos una empresa comprometida, dinámica y con un equipo de profesionales altamente capacitados.
@@ -114,9 +163,13 @@
     </section>
   </main>
 
+  <a class="button-whatsapp"
+    href="https://api.whatsapp.com/send?phone=573208379838&text=Tengo%20inter%C3%A9s%20por%20contratar%20sus%20servicios%20en%20soluciones%20TI"
+    target="_blank"><img src="https://i.ibb.co/VgSspjY/whatsapp-button.png" alt="botón de whatsapp"></a>
+
   <footer class="footer">
     <div class="footer__row">
-      <div class="footer__row--items">
+      <div class="footer__row-items">
         <ul class="footer-nav">
           <h4>Acerca de</h4>
           <li><a href="#banner">Cualidades</a></li>
@@ -125,46 +178,46 @@
         </ul>
       </div>
       <br>
-      <div class="footer__row--items">
+      <div class="footer__row-items">
         <div class="footer-contact" id="contact">
           <h4>Contáctenos</h4>
           <p>
-            <span class="material-icons footer__row--icon">location_on</span>
+            <span class="material-icons footer__row-icon">location_on</span>
             <a href="https://www.google.com/maps/dir//Cl.+16+%237-86,+Tunja,+Boyac%C3%A1/@5.5284061,-73.3630163,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e6a7dd241155ac5:0x213c532ef47eeb5a!2m2!1d-73.3608276!2d5.5284008?hl=es"
               target="_blank">Cl.
               16 # 7-86, Tunja, Boyacá</a>
           </p>
           <p>
-            <span class="material-icons footer__row--icon">schedule</span>
+            <span class="material-icons footer__row-icon">schedule</span>
             Lun-Sáb 9AM-6PM
           </p>
           <p>
-            <span class="material-icons footer__row--icon">phone</span>
+            <span class="material-icons footer__row-icon">phone</span>
             <a href="tel:+573208379838">320 837 9838</a>
           </p>
           <p>
-            <span class="material-icons footer__row--icon">email</span>
-            <a href="mailto:">
+            <span class="material-icons footer__row-icon">email</span>
+            <a href="mailto:pa-che@hotmail.com">pa-che@hotmail.com</a>
         </div>
       </div>
     </div>
     <hr>
     <div class="footer-socialNetworks">
-      <a href="https://www.facebook.com/Servicio-y-Soluciones-TI-100000000000000" target="_blank"><svg
-          xmlns="http://www.w3.org/2000/svg" class="footer__social--icon" width="24" height="24" viewBox="0 0 24 24">
+      <a href="https://www.facebook.com/Solucionamostic/?mibextid=RUbZ1f&ti=as" target="_blank"><svg
+          xmlns="http://www.w3.org/2000/svg" class="footer__social-icon" width="24" height="24" viewBox="0 0 24 24">
           <path
             d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
         </svg></a>
-      <a href="https://www.instagram.com/servicioysolucionesti/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
-          class="footer__social--icon" width="24" height="24" viewBox="0 0 24 24">
+      <a href="https://www.instagram.com/serviciosysolucionesti/" target="_blank"><svg
+          xmlns="http://www.w3.org/2000/svg" class="footer__social-icon" width="24" height="24" viewBox="0 0 24 24">
           <path
             d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
         </svg></a>
     </div>
     <p>© 2022 Servicios y Soluciones TI</p>
   </footer>
-  <script src=" ./js/main.js"></script>
 
+  <script src=" ./js/main.js"></script>
 </body>
 
 </html>
