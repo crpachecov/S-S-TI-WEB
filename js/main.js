@@ -25,8 +25,6 @@ navLink.addEventListener('click', () => {
 });
 
 function changePosition() {
-
-
     if (value < slider.length) {
         slider[value].classList.toggle('carousel__services-card--show');
         value++;
@@ -40,14 +38,14 @@ function changePosition() {
 
 }
 
-$(document).ready(function () {
-    $(window).resize(function () {
-        window.matchMedia("(max-width: 768px").addEventListener('change', (e) => {
-            if (e.matches) {
-                interval = setInterval(changePosition, 6000);
-            } else {
-                clearInterval(interval);
-            }
-        });
-    });
-});
+let media = window.matchMedia("(min-width: 1024px)");
+interval = setInterval(changePosition, 6000);
+
+if (media.matches) {
+
+    clearInterval(interval);
+}
+
+
+
+
