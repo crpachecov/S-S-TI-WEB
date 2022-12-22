@@ -40,7 +40,7 @@ function changePosition() {
 
 }
 
-window.matchMedia("(max-width: 768px").addEventListener('change', (e) => {
+window.matchMedia("(max-width: 768px").addEventListener('resize', (e) => {
     if (e.matches) {
         interval = setInterval(changePosition, 6000);
     } else {
