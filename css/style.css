@@ -484,6 +484,10 @@ hr {
   filter: invert(100%);
 }
 
+.footer__social-icon:hover {
+  transform: scale(1.1);
+}
+
 .footer p {
   color: #f3f3f3;
   margin-top: 10px;
@@ -494,9 +498,50 @@ hr {
   .skewed {
     height: 14%;
   }
+
   .nav--scrolled {
     width: 100%;
     padding: 0 40px;
+  }
+
+  .carousel__services-card{
+    width: 50%;
+    place-self: center;
+  }
+
+  .main__quality-grid {
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2px;
+
+    grid-template-areas:
+      "title title title"
+      "first second third";
+    justify-items: center;
+  }
+
+  .main__quality-items{
+    place-self: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "about contact";
+    grid-column-gap: 10px;
+    justify-items: center;
+  }
+
+  .footer-about {
+    grid-area: about;
+    place-self: center;
+  }
+
+  .footer__row-items-contact {
+    grid-area: contact;
   }
 }
 
