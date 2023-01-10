@@ -496,7 +496,12 @@ hr {
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .skewed {
-    height: 14%;
+    transform: skewY(3deg);
+    height: 11%;
+  }
+
+  .main__banner {
+    margin: 0;
   }
 
   .nav--scrolled {
@@ -504,9 +509,56 @@ hr {
     padding: 0 40px;
   }
 
-  .carousel__services-card{
-    width: 50%;
-    place-self: center;
+  .carousel__services {
+    width: 100%;
+
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "card";
+    padding: 10px;
+  }
+
+  .carousel__title {
+    display: none;
+  }
+
+  .carousel__services-card {
+    height: 380px;
+
+    box-shadow: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "img info";
+  }
+
+  .carousel__services-card--show {
+    opacity: 1;
+    pointer-events: unset;
+    grid-area: card;
+  }
+
+  .card-img {
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+    background: none;
+  }
+
+  .card-info {
+    grid-area: info;
+    margin: 0;
+    width: 100%;
+    align-self: center;
+  }
+
+  .card-info h3 {
+    font-size: 2.2em;
+  }
+
+  .card-info p {
+    font-size: 1.1em;
   }
 
   .main__quality-grid {
@@ -518,12 +570,31 @@ hr {
       "title title title"
       "first second third";
     justify-items: center;
+
+    padding: 10px;
   }
 
-  .main__quality-items{
+  .main__quality-items {
     place-self: center;
     padding: 0;
     margin: 0;
+  }
+
+  .main__about {
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .main__about-items {
+    width: 90%;
+    height: 300px;
+  }
+
+  .main__about-items h2 {
+    font-size: 1.4em;
   }
 
   .footer__row {
@@ -548,7 +619,8 @@ hr {
 /* Desktop */
 @media screen and (min-width: 1024px) {
   .skewed {
-    height: 25%;
+    transform: skewY(1deg);
+    height: 15%;
   }
 
   .nav {

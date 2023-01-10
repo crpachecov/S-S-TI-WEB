@@ -38,14 +38,6 @@ function changePosition() {
 
 }
 
-let media = window.matchMedia("(min-width: 769px)");
 interval = setInterval(changePosition, 6000);
-
-if (media.matches) {
-
-    clearInterval(interval);
-}
-
-
 
 
